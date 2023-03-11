@@ -5,6 +5,9 @@ import jakarta.persistence.*;
 import javax.print.attribute.standard.MediaSize;
 import java.util.Objects;
 
+//we need postgresql JDBC driver cause it allows java programs to connect
+//to postgresql database and spring data JPA depend on it
+
 //this is what we need so that our class been mapped to our database, we'll get a table called customer with 4 fields,
 //and also a sequence out of it.
 @Entity
